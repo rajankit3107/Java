@@ -31,8 +31,19 @@ public class Main {
 
         //Reading Input from users
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your age : ");
         byte age = scanner.nextByte();
-        System.out.println("your age is " + age);
+        if(age < 0)
+            System.out.println("Age cannot be less than 0");
+        else System.out.println("your age is " + age);
+
+        //Reading String
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.print("Enter your name : ");
+//        String name = scanner1.next();
+        String name1 = scanner1.nextLine().trim();
+//        System.out.println("your name is: " + name);
+        System.out.println("your name is: " + name1);
 
 
 
