@@ -39,11 +39,21 @@ public class Main {
 
         //Reading String
         Scanner scanner1 = new Scanner(System.in);
-        System.out.print("Enter your name : ");
+//        System.out.print("Enter your name : ");
 //        String name = scanner1.next();
         String name1 = scanner1.nextLine().trim();
 //        System.out.println("your name is: " + name);
-        System.out.println("your name is: " + name1);
+//        System.out.println("your name is: " + name1);
+
+        int role = 1;
+        switch (role) {
+            case 1:
+                System.out.println("you are an admin");
+                break;
+            case 2:
+                System.out.println("you are an user");
+                break;
+        }
 
 
 
